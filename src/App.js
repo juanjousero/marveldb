@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { Home } from './components/Home';
 import { Characters } from './components/Characters';
 import { Comics } from './components/Comics';
-import { About } from './components/About';
+import { Search } from './components/Search';
 import { HeroDetail } from './components/HeroDetail'
 import { ComicDetail } from './components/ComicDetail';
 
@@ -26,7 +26,7 @@ export function App() {
         <Route path='/characters/:id' element={<HeroDetail />}></Route>
         <Route path='/comics' element={<Comics />}></Route>
         <Route path='/comics/:id' element={<ComicDetail />}></Route>
-        <Route path='/about' element={<About />}></Route>
+        <Route path='/search' element={<Search />}></Route>
       </Routes>
     </div>
   );

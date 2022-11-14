@@ -3,11 +3,12 @@ html, body {
   list-style: none;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .App {
   width: 100%;
-  min-height: 100vh;
+  min-height: 98vh;
   text-align: center;
   overflow-x: hidden;
   color: rgba(56, 56, 56, 1);
@@ -27,7 +28,7 @@ header {
 }
 
 nav {
-  width: 40%;
+  width: 30%;
   max-width: 500px;
   height: auto;
   display: flex;
@@ -40,6 +41,140 @@ nav {
 .nav-link {
   text-decoration: none;
   color: black;
+}
+
+.search-div {
+  padding-right: 16px;
+}
+
+/* Home.jsx */
+
+.home-div {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.home-comic {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  box-shadow: 5px 5px 15px rgba(56, 56, 56, 0.75);
+  visibility: hidden;
+  animation: throw-comic 0.5s forwards linear;
+}
+
+.comic002 {
+  transform: translate3d(85vw, 20vh, 0) rotate(30deg);
+}
+
+.comic003 {
+  transform: translate3d(20vw, 15vh, 0) rotate(-30deg);
+  animation-delay: 0.25s;
+}
+
+.comic004 {
+  transform: translate3d(65vw, 55vh, 0) rotate(10deg);
+  animation-delay: 0.5s;
+}
+
+.comic005 {
+  transform: translate3d(0vw, 40vh, 0) rotate(-30deg);
+  animation-delay: 0.75s;
+}
+
+.comic006 {
+  transform: translate3d(80vw, 0, 0) rotate(7deg);
+  animation-delay: 1s;
+}
+
+.comic007 {
+  transform: translate3d(63vw, 0, 0) rotate(-50deg);
+  animation-delay: 1.25s;
+}
+
+.comic008 {
+  transform: translate3d(56vw, 28vh, 0) rotate(-5deg);
+  animation-delay: 1.5s;
+}
+
+.comic009 {
+  transform: translate3d(85vw, 50vh, 0) rotate(-25deg);
+  animation-delay: 1.75s;
+}
+
+.comic010 {
+  transform: translate3d(37vw, 0vh, 0) rotate(15deg);
+  animation-delay: 2s;
+}
+
+.comic011 {
+  transform: translate3d(25vw, 60vh, 0) rotate(-15deg);
+  animation-delay: 2.25s;
+}
+
+.comic012 {
+  transform: translate3d(70vw, 28vh, 0) rotate(5deg);
+  animation-delay: 2.5s;
+}
+
+.comic013 {
+  transform: translate3d(42vw, 25vh, 0) rotate(40deg);
+  animation-delay: 2.75s;
+}
+
+.comic014 {
+  transform: translate3d(3.5vw, 15vh, 0) rotate(-5deg);
+  animation-delay: 3s;
+}
+.comic015 {
+  transform: translate3d(43vw, 50vh, 0) rotate(25deg);
+  animation-delay: 3.25s;
+}
+.comic016 {
+  transform: translate3d(8vw, 60vh, 0) rotate(60deg);
+  animation-delay: 3.5s;
+}
+.comic017 {
+  transform: translate3d(13vw, -5vh, 0) rotate(35deg);
+  animation-delay: 3.75s;
+}
+.comic018 {
+  transform: translate3d(15vw, 30vh, 0) rotate(5deg);
+  animation-delay: 4s;
+}
+.comic019 {
+  transform: translate3d(50vw, -1.5vh, 0) rotate(-10deg);
+  animation-delay: 4.25s;
+}
+.comic020 {
+  transform: translate3d(75vw, 62vh, 0) rotate(5deg);
+  animation-delay: 4.5s;
+}
+.comic021 {
+  transform: translate3d(50vw, 60vh, 0) rotate(75deg);
+  animation-delay: 4.75s;
+}
+.comic022 {
+  transform: translate3d(27vw, -5vh, 0) rotate(-15deg);
+  animation-delay: 5s;
+}
+.comic023 {
+  transform: translate3d(30vw, 42.5vh, 0) rotate(-25deg);
+  animation-delay: 5.25s;
+}
+
+@keyframes throw-comic {
+  0%{
+    width: 500px;
+    visibility: visible;
+  }
+
+  100% {
+    width: 250px;
+    visibility: visible;
+  }
 }
 
 /* Characters.jsx */
@@ -546,4 +681,142 @@ nav {
   position: relative;
   top: 1rem;
   color: rgba(56, 56, 56, 1);
+}
+
+/* Search.jsx */
+.search-page {
+  width: 100%;
+  height: 88vh;
+}
+
+.search-hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url('/public/marvel-hero.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.search-div {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.radio-form {
+  width: 15%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+
+input[type='radio'] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  outline: 1px solid black;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked {
+  border: 2px solid white;
+  background-color: rgba(227, 2, 28, 1);
+}
+
+.datalist-div {
+  width: 10%;
+  max-width: 400px;
+  height: 4vh;
+  max-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid rgba(56, 56, 56, 1);
+}
+
+.datalist-form {
+  width: 120%;
+  padding: 12px;
+  text-align: start;
+  overflow: hidden;
+  background-image: url('/public/down-array.svg');
+  background-size: 15%;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.datalist-form:hover {
+  animation: down-arrow-animation 0.5s 3 linear;
+}
+
+@keyframes down-arrow-animation {
+  0% {
+    background-position: 95% center;
+  }
+
+  100% {
+    background-position: 95% 70%;
+  }
+}
+
+.datalist-form select {
+  background: transparent;
+  border: none;
+  width: 120%;
+  height: 4vh;
+  max-height: 50px;
+}
+
+#text {
+  width: 10%;
+  max-width: 400px;
+  height: 4vh;
+  max-height: 50px;
+  border-radius: 3px;
+  border: 1px solid rgba(56, 56, 56, 1);
+}
+
+.searchButton {
+  width: 7.5%;
+  height: 5vh;
+  background-color: rgba(227, 2, 28, 1);
+  border-radius: 3px;
+  border: 1px solid rgba(56, 56, 56, 1);
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.searchButton:hover {
+  background-color: white;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  color:rgba(56, 56, 56, 1);
+  transition: all 0.25s linear;
+}
+
+.right-arrow {
+  width: 5%;
+  height: 50px;
+  background-image: url('/public/right-arrow.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-arrow:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s linear;
 }
