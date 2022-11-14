@@ -12,7 +12,6 @@ import { ComicDetail } from './components/ComicDetail';
 export const url = 'https://gateway.marvel.com/';
 export const endpoint = 'v1/public/characters';
 export const publicKey = 'd59ca3291ebcdb54a6ed7cc05783f47e';
-// export const publicKey = '4475db59c85bb166ecb20af79b25ba14';
 export const searchParams = `?apikey=${publicKey}`;
 
 export function App() {

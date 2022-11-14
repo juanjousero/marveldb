@@ -38,11 +38,6 @@ export function Search () {
         setInterval(() => setSubmitted(false), 3000);
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    // HAY QUE SEGUIR MEJORANDO LAS BÚSQUEDAS Y DEMÁS, PERO YA FUNCIONAN LOS DOS FILTROS //
-    // PENSAR CÓMO SE MANEJA CUANDO NO SE ENCUENTRA UNA BÚSQUEDA                         //
-    ///////////////////////////////////////////////////////////////////////////////////////
-
     useEffect(() => {
         const fetchingId = async () => {
             if (name !== '') {
